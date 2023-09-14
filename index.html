@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Site sobre Fatos dos Planetas - Frontend Mentor</title>
+    <link rel="shortcut icon" href="./src/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=League+Spartan:wght@100;200;300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/variables.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+</head>
+
+<body>
+    <header class="header">
+        <div>
+            <h1>The Planets</h1>
+        </div>
+        <nav>
+
+            <button class="btn-hamburger"><img class="img-button" src="./src/images/icon-hamburger.svg" alt="Menu"></button>
+
+            <form class="planets">
+                <div class="label-mercury label-planet">
+                    <label for="mercury">Mercury</label>
+                    <input type="radio" checked name="option[365]" id="mercury">
+                </div>
+                <div class="label-venus label-planet">
+                    <label for="venus">Venus</label>
+                    <input type="radio" name="option[365]" id="venus">
+                </div>
+                <div class="label-earth label-planet">
+                    <label for="earth">Earth</label>
+                    <input type="radio" name="option[365]" id="earth">
+                </div>
+                <div class="label-mars label-planet">
+                    <label for="mars">Mars</label>
+                    <input type="radio" name="option[365]" id="mars">
+                </div>
+                <div class="label-jupiter label-planet">
+                    <label for="jupiter">Jupiter</label>
+                    <input type="radio" name="option[365]" id="jupiter">
+                </div>
+                <div class="label-saturn label-planet">
+                    <label for="saturn">Saturn</label>
+                    <input type="radio" name="option[365]" id="saturn">
+                </div>
+                <div class="label-uranus label-planet">
+                    <label for="uranus">Uranus</label>
+                    <input type="radio" name="option[365]" id="uranus">
+                </div>
+                <div class="label-neptune label-planet">
+                    <label for="neptune">Neptune</label>
+                    <input type="radio" name="option[365]" id="neptune">
+                </div>
+            </form>
+        </nav>
+    </header>
+    <hr>
+    <main class="main">
+        <section class="mercury planet selecionado">
+            <section class="intro">
+                <div class="img-mercury">
+                    <img src="./src/images/planet-mercury.svg" alt="Mercury">
+                </div>
+                <article>
+                    <div>
+                        <h1>Mercury</h1>
+                        <p class="description">Mercury is the smallest planet in the Solar System and the closest to the
+                            Sun. Its orbit around
+                            the Sun takes 87.97 Earth days, the shortest of all the Sun's planets. Mercury is one of four
+                            terrestrial planets in the Solar System, and is a rocky body like Earth.</p>
+                        <div class="source">
+                            Source: <a href="https://pt.wikipedia.org/wiki/Merc%C3%BArio_(planeta)" target="_blank">
+                                Wikipedia<img src="./src/images/icon-source.svg" aria-hidden="true">
+                            </a></div>
+                    </div>
+                    <form class="buttons">
+                        <button class="btn-mercury">
+                            <span>01</span>
+                            <p>Overview</p>
+                        </button>
+                        <button class="btn-mercury">
+                            <span>02</span>
+                            <p>Internal Structure</p>
+                        </button>
+                        <button class="btn-mercury">
+                            <span>03</span>
+                            <p>Surface Geology</p>
+                        </button>
+                        <hr class="hr-mobile">
+                    </form>
+                </article>
+            </section>
+            <section class="informations">
+                <article>
+                    <span>Rotation time</span>
+                    <h2>58.6 days</h2>
+                </article>
+                <article>
+                    <span>Revolution time</span>
+                    <h2>87.97 days</h2>
+                </article>
+                <article>
+                    <span>Radius</span>
+                    <h2>2,439.7 km</h2>
+                </article>
+                <article>
+                    <span>Average temp</span>
+                    <h2>430°C</h2>
+                </article>
+            </section>
+        </section>
+
+        <section>
+            <section class="venus planet">
+                <section class="intro">
+                    <div class="img-venus">
+                        <img src="./src/images/planet-venus.svg" alt="Venus">
+                    </div>
+                    <article>
+                        <div>
+                            <h1>Venus</h1>
+                            <p class="description">Venus is the second planet from the Sun. It is named after the Roman
+                                goddess of love and
+                                beauty. As the brightest natural object in Earth's night sky after the Moon, Venus can cast
+                                shadows and can be, on rare occasions, visible to the naked eye in broad daylight.</p>
+                            <div class="source">
+                                Source: <a href="https://pt.wikipedia.org/wiki/V%C3%A9nus_(planeta)" target="_blank">
+                                    Wikipedia<img src="./src/images/icon-source.svg" aria-hidden="true">
+                                </a></div>
+                        </div>
+                        <form class="buttons">
+                            <button class="btn-venus">
+                                <span>01</span>
+                                <p>Overview</p>
+                            </button>
+                            <button class="btn-venus">
+                                <span>02</span>
+                                <p>Internal Structure</p>
+                            </button>
+                            <button class="btn-venus">
+                                <span>03</span>
+                                <p>Surface Geology</p>
+                            </button>
+                            <hr class="hr-mobile">
+                        </form>
+                    </article>
+                </section>
+                <section class="informations">
+                    <article>
+                        <span>Rotation time</span>
+                        <h2>243 days</h2>
+                    </article>
+                    <article>
+                        <span>Revolution time</span>
+                        <h2>224.7 days</h2>
+                    </article>
+                    <article>
+                        <span>Radius</span>
+                        <h2>6051.8 km</h2>
+                    </article>
+                    <article>
+                        <span>Average temp</span>
+                        <h2>471°C</h2>
+                    </article>
+                </section>
+            </section>
+
+            <section>
+                <section class="earth planet">
+                    <section class="intro">
+                        <div class="img-earth">
+                            <img src="./src/images/planet-earth.svg" alt="Earth">
+                        </div>
+                        <article>
+                            <div>
+                                <h1>Earth</h1>
+                                <p class="description">Third planet from the Sun and the only known planet to harbor life.
+                                    About 29.2% of
+                                    Earth's surface is land with remaining 70.8% is covered with water. Earth's distance
+                                    from the Sun, physical properties and geological history have allowed life to evolve and
+                                    thrive.</p>
+                                <div class="source">
+                                    Source: <a href="https://pt.wikipedia.org/wiki/Terra" target="_blank">
+                                        Wikipedia<img src="./src/images/icon-source.svg" aria-hidden="true">
+                                    </a></div>
+                            </div>
+                            <form class="buttons">
+                                <button class="btn-earth">
+                                    <span>01</span>
+                                    <p>Overview</p>
+                                </button>
+                                <button class="btn-earth">
+                                    <span>02</span>
+                                    <p>Internal Structure</p>
+                                </button>
+                                <button class="btn-earth">
+                                    <span>03</span>
+                                    <p>Surface Geology</p>
+                                </button>
+                                <hr class="hr-mobile">
+                            </form>
+                        </article>
+                    </section>
+                    <section class="informations">
+                        <article>
+                            <span>Rotation time</span>
+                            <h2>0.99 days</h2>
+                        </article>
+                        <article>
+                            <span>Revolution time</span>
+                            <h2>365.26 days</h2>
+                        </article>
+                        <article>
+                            <span>Radius</span>
+                            <h2>6,371 km</h2>
+                        </article>
+                        <article>
+                            <span>Average temp</span>
+                            <h2>16°C</h2>
+                        </article>
+                    </section>
+                </section>
+
+                <section>
+                    <section class="mars planet">
+                        <section class="intro">
+                            <div class="img-mars">
+                                <img src="./src/images/planet-mars.svg" alt="Mars">
+                            </div>
+                            <article>
+                                <div>
+                                    <h1>Mars</h1>
+                                    <p class="description">Mars is the fourth planet from the Sun and the second-smallest
+                                        planet in the Solar
+                                        System, being larger than only Mercury. In English, Mars carries the name of the
+                                        Roman god of war and is often referred to as the "Red Planet".</p>
+                                    <div class="source">
+                                        Source: <a href="https://pt.wikipedia.org/wiki/Marte_(planeta)"
+                                            target="_blank"> Wikipedia<img src="./src/images/icon-source.svg"
+                                                aria-hidden="true">
+                                        </a></div>
+                                </div>
+                                <form class="buttons">
+                                    <button class="btn-mars">
+                                        <span>01</span>
+                                        <p>Overview</p>
+                                    </button>
+                                    <button class="btn-mars">
+                                        <span>02</span>
+                                        <p>Internal Structure</p>
+                                    </button>
+                                    <button class="btn-mars">
+                                        <span>03</span>
+                                        <p>Surface Geology</p>
+                                    </button>
+                                    <hr class="hr-mobile">
+                                </form>
+                            </article>
+                        </section>
+                        <section class="informations">
+                            <article>
+                                <span>Rotation time</span>
+                                <h2>1.03 days</h2>
+                            </article>
+                            <article>
+                                <span>Revolution time</span>
+                                <h2>1.88 years</h2>
+                            </article>
+                            <article>
+                                <span>Radius</span>
+                                <h2>3,389.5 km</h2>
+                            </article>
+                            <article>
+                                <span>Average temp</span>
+                                <h2>-28°C</h2>
+                            </article>
+                        </section>
+                    </section>
+
+                    <section>
+                        <section class="jupiter planet">
+                            <section class="intro">
+                                <div class="img-jupiter">
+                                    <img src="./src/images/planet-jupiter.svg" alt="Jupiter">
+                                </div>
+                                <article>
+                                    <div>
+                                        <h1>Jupiter</h1>
+                                        <p class="description">Jupiter is the fifth planet from the Sun and the largest in
+                                            the Solar System. It
+                                            is a gas giant with a mass two and a half times that of all the other planets in
+                                            the Solar System combined, but less than one-thousandth the mass of the Sun.</p>
+                                        <div class="source">
+                                            Source: <a href="https://pt.wikipedia.org/wiki/J%C3%BApiter_(planeta)"
+                                                target="_blank"> Wikipedia<img src="./src/images/icon-source.svg"
+                                                    aria-hidden="true">
+                                            </a></div>
+                                    </div>
+                                    <form class="buttons">
+                                        <button class="btn-jupiter">
+                                            <span>01</span>
+                                            <p>Overview</p>
+                                        </button>
+                                        <button class="btn-jupiter">
+                                            <span>02</span>
+                                            <p>Internal Structure</p>
+                                        </button>
+                                        <button class="btn-jupiter">
+                                            <span>03</span>
+                                            <p>Surface Geology</p>
+                                        </button>
+                                        <hr class="hr-mobile">
+                                    </form>
+                                </article>
+                            </section>
+                            <section class="informations">
+                                <article>
+                                    <span>Rotation time</span>
+                                    <h2>9.93 hours</h2>
+                                </article>
+                                <article>
+                                    <span>Revolution time</span>
+                                    <h2>11.86 years</h2>
+                                </article>
+                                <article>
+                                    <span>Radius</span>
+                                    <h2>69,911 km</h2>
+                                </article>
+                                <article>
+                                    <span>Average temp</span>
+                                    <h2>-108°C</h2>
+                                </article>
+                            </section>
+                        </section>
+
+                        <section>
+                            <section class="saturn planet">
+                                <section class="intro">
+                                    <div class="img-saturn">
+                                        <img src="./src/images/planet-saturn.svg" alt="Saturn">
+                                    </div>
+                                    <article>
+                                        <div>
+                                            <h1>Saturn</h1>
+                                            <p class="description">Saturn is the sixth planet from the Sun and the
+                                                second-largest in the Solar
+                                                System, after Jupiter. It is a gas giant with an average radius of about
+                                                nine and a half times that of Earth. It only has one-eighth the average
+                                                density of Earth.</p>
+                                            <div class="source">
+                                                Source: <a href="https://pt.wikipedia.org/wiki/Saturno_(planeta)"
+                                                    target="_blank"> Wikipedia<img src="./src/images/icon-source.svg"
+                                                        aria-hidden="true">
+                                                </a></div>
+                                        </div>
+                                        <form class="buttons">
+                                            <button class="btn-saturn">
+                                                <span>01</span>
+                                                <p>Overview</p>
+                                            </button>
+                                            <button class="btn-saturn">
+                                                <span>02</span>
+                                                <p>Internal Structure</p>
+                                            </button>
+                                            <button class="btn-saturn">
+                                                <span>03</span>
+                                                <p>Surface Geology</p>
+                                            </button>
+                                            <hr class="hr-mobile">
+                                        </form>
+                                    </article>
+                                </section>
+                                <section class="informations">
+                                    <article>
+                                        <span>Rotation time</span>
+                                        <h2>10.8 hours</h2>
+                                    </article>
+                                    <article>
+                                        <span>Revolution time</span>
+                                        <h2>29.46 years</h2>
+                                    </article>
+                                    <article>
+                                        <span>Radius</span>
+                                        <h2>58,232 km</h2>
+                                    </article>
+                                    <article>
+                                        <span>Average temp</span>
+                                        <h2>-138°C</h2>
+                                    </article>
+                                </section>
+                            </section>
+
+                            <section>
+                                <section class="uranus planet">
+                                    <section class="intro">
+                                        <div class="img-uranus">
+                                            <img src="./src/images/planet-uranus.svg" alt="Uranus">
+                                        </div>
+                                        <article>
+                                            <div>
+                                                <h1>Uranus</h1>
+                                                <p class="description">Uranus is the seventh planet from the Sun. Its name
+                                                    is a reference to the
+                                                    Greek god of the sky, Uranus according to Greek mythology, was the
+                                                    great-grandfather of Ares. It has the third-largest planetary radius and
+                                                    fourth-largest planetary mass in the Solar System.</p>
+                                                <div class="source">
+                                                    Source: <a href="https://pt.wikipedia.org/wiki/Urano_(mitologia)"
+                                                        target="_blank"> Wikipedia<img src="./src/images/icon-source.svg"
+                                                            aria-hidden="true">
+                                                    </a></div>
+                                            </div>
+                                            <form class="buttons">
+                                                <button class="btn-uranus">
+                                                    <span>01</span>
+                                                    <p>Overview</p>
+                                                </button>
+                                                <button class="btn-uranus">
+                                                    <span>02</span>
+                                                    <p>Internal Structure</p>
+                                                </button>
+                                                <button class="btn-uranus">
+                                                    <span>03</span>
+                                                    <p>Surface Geology</p>
+                                                </button>
+                                                <hr class="hr-mobile">
+                                            </form>
+                                        </article>
+                                    </section>
+                                    <section class="informations">
+                                        <article>
+                                            <span>Rotation time</span>
+                                            <h2>17.2 hours</h2>
+                                        </article>
+                                        <article>
+                                            <span>Revolution time</span>
+                                            <h2>84 years</h2>
+                                        </article>
+                                        <article>
+                                            <span>Radius</span>
+                                            <h2>25,362 km</h2>
+                                        </article>
+                                        <article>
+                                            <span>Average temp</span>
+                                            <h2>-195°C</h2>
+                                        </article>
+                                    </section>
+                                </section>
+
+                                <section>
+                                    <section class="neptune planet">
+                                        <section class="intro">
+                                            <div class="img-neptune">
+                                                <img src="./src/images/planet-neptune.svg" alt="Neptune">
+                                            </div>
+                                            <article>
+                                                <div>
+                                                    <h1>Neptune</h1>
+                                                    <p class="description">Neptune is the eighth and farthest-known Solar
+                                                        planet from the Sun.
+                                                        In the Solar System, it is the fourth-largest planet by diameter,
+                                                        the third-most-massive planet, and the densest giant planet. It is
+                                                        17 times the mass of Earth, more massive than its near-twin Uranus.
+                                                    </p>
+                                                    <div class="source">
+                                                        Source: <a
+                                                            href="https://pt.wikipedia.org/wiki/Netuno_(planeta)"
+                                                            target="_blank"> Wikipedia<img
+                                                                src="./src/images/icon-source.svg" aria-hidden="true">
+                                                        </a></div>
+                                                </div>
+                                                <form class="buttons">
+                                                    <button class="btn-neptune">
+                                                        <span>01</span>
+                                                        <p>Overview</p>
+                                                    </button>
+                                                    <button class="btn-neptune">
+                                                        <span>02</span>
+                                                        <p>Internal Structure</p>
+                                                    </button>
+                                                    <button class="btn-neptune">
+                                                        <span>03</span>
+                                                        <p>Surface Geology</p>
+                                                    </button>
+                                                </form>
+                                            </article>
+                                        </section>
+                                        <section class="informations">
+                                            <article>
+                                                <span>Rotation time</span>
+                                                <h2>16.08 hours</h2>
+                                            </article>
+                                            <article>
+                                                <span>Revolution time</span>
+                                                <h2>164.79 years</h2>
+                                            </article>
+                                            <article>
+                                                <span>Radius</span>
+                                                <h2>24,622 km</h2>
+                                            </article>
+                                            <article>
+                                                <span>Average temp</span>
+                                                <h2>-201°C</h2>
+                                            </article>
+                                        </section>
+                                    </section>
+    </main>
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>
